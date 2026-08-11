@@ -1,4 +1,4 @@
 
-import {hello} from './example-module';
-
-console.log(hello());
+export function hello() {
+  return 'Hello Apps Script!';
+}
