@@ -9,7 +9,7 @@ const gas = {
     const exports = chunk.exports;
     if (!exports || exports.length === 0) return code;
     const wrappers = exports
-      .map(exp => `function ${exp}() { return $.${exp}(); }`)
+      .map(exp => `function ${exp}(...args) { return $.${exp}(...args); }`)
       .join('\n');
     return code + '\n' + wrappers;
   },
