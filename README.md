@@ -1,4 +1,4 @@
-# aside
+# aside-react
 
 A Google Apps Script web app: TypeScript backend + React frontend, deployed as
 a single script. Built on the [`@google/aside`](https://github.com/google/aside)
