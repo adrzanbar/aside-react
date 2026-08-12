@@ -26,3 +26,40 @@ nav a.active {
   color: var(--accent);
   background: var(--accent-bg);
 }
+
+.loading {
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border-bottom: 1px solid var(--accent-border);
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+form input {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+form button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  background: var(--accent-bg);
+  cursor: pointer;
+}
+
+form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
